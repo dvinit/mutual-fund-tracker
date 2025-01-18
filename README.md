@@ -2,6 +2,8 @@
 To run in local use nodejs version 16 and have mongodb installed and running in local:
 
 npm install 
+
+
 node index.js
 
 
