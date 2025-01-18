@@ -1,3 +1,8 @@
+# Configuration
+Before starting the app , lets ensure cofiguration is alright. 
+Check under /config/default.json 
+Make any changes to rapidapi keys , hosts, url,etc if needed. Now we are set to run the app. 
+
 # Mutual fund portfolio tracker system
 Ensure docker is active. And just run the one line command. This will pull in mongodb database and nodejs images, build a local image of the application and run the same in required sequence.
 

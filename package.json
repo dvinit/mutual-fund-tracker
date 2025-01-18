@@ -1,7 +1,7 @@
 {
   "name": "lbs",
   "version": "1.0.0",
-  "description": "Library management system",
+  "description": "Fund management system",
   "main": "index.js",
   "scripts": {
     "test": "jest",
