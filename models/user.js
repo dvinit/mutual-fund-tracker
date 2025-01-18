@@ -5,7 +5,8 @@ const jwt = require('jsonwebtoken');
 const user_schema = Joi.object({
     name : Joi.string().alphanum().min(5).max(50).required(),
     email: Joi.string().min(5).max(50).required().email(),
-    password: Joi.string().alphanum().min(5).max(255).required()
+    password: Joi.string().alphanum().min(5).max(255).required(),
+    schemes : Joi.array().optional()
     });
 
      function validateUser(user){
@@ -32,7 +33,8 @@ const user_schema = Joi.object({
         minlength: 5 ,
         maxlength: 1024
         },
-        isAdmin: Boolean
+        isAdmin: Boolean ,
+        schemes : Array
         });
 
 userSchema.methods.generateAuthToken = function(){

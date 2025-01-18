@@ -1,3 +1,6 @@
 {
-    "jwtPrivateKey":""
+    "jwtPrivateKey":"a-secret",
+    "x-rapidapi-key": "5c01b42705mshde6b2e2624d02bfp15677ejsn814dca7e510d",
+    "x-rapidapi-url": "https://latest-mutual-fund-nav.p.rapidapi.com/historic",
+    "x-rapidapi-host": "latest-mutual-fund-nav.p.rapidapi.com"
 }

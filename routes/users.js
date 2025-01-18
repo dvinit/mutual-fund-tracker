@@ -14,7 +14,7 @@ const user = await User.findById(req.user._id).select('-password');
 res.status(200).send(user);
     });        
     
-    router.post('/', async(req, res) => {
+    router.post('/register', async(req, res) => {
         const {error,value} = validateUser(req.body);
     if(error){
         console.log(error.details[0].message);

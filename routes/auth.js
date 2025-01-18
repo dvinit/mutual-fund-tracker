@@ -1,7 +1,4 @@
-const config=require('config');
-const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt'); 
-const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
 const Joi = require('joi');
@@ -9,7 +6,7 @@ const _ = require('lodash');
 const { userSchema, User, validateUser } = require('../models/user');
 
             
-    // Getting all the book types in the library
+    
     router.post('/', async(req, res) => {
         const {error} = validate(req.body);
     if(error){
